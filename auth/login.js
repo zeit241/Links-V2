@@ -10,8 +10,8 @@ router.get('/', (request, response)=>{
 router.post('/check',async (request, response, next) => {
     let auth_data = request.body
     auth_data = {
-        login: '79997601791',
-        password:'qazwsx223',
+        login: request.body.login,
+        password: request.body.password,
         sid: request.body.captcha_sid,
         key:  request.body.captcha_key
     }
